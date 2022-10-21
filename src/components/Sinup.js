@@ -1,6 +1,7 @@
 import React, {useState}from 'react'
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from './FirebaseConfig';
+import { Link } from 'react-router-dom';
 
 
 const Sinup = () => {
@@ -60,7 +61,7 @@ const Sinup = () => {
 
             </div>
             <div>
-                <span>Already have an account ? <a href='/'>Login</a></span>
+                <span>Already have an account ? <Link to='/'>Login</Link></span>
             </div>
         </form>
     </div>
