@@ -12,13 +12,13 @@ const Home = () => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'LINK-TO-KEY',
-            'X-RapidAPI-Host': 'LINK-TO-HOST',
+            'X-RapidAPI-Key': '1f16c89463mshcfda4c5beb598cbp18f651jsn21084407454f',
+            'X-RapidAPI-Host': 'online-movie-database.p.rapidapi.com',
         }
     };
 
     async function requestMovies() {
-        fetch('LINK-TO-URL', options)
+        fetch('https://online-movie-database.p.rapidapi.com/auto-complete?q=game', options)
         .then(response => response.json())
         .then(response => {
             const data = response.d
@@ -27,8 +27,7 @@ const Home = () => {
 
         .catch(err => console.error(err));
     }
-    
-    console.log(list)
+
   return (
     <div>
         {list.map((item)=>(

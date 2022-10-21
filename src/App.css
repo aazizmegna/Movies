@@ -1,6 +1,8 @@
-.App {
-  border:1px solid black;
+body {
   margin: 5px;
   text-align: center;
 }
 
+button, span, input{
+  margin: 0.3rem;
+ }
