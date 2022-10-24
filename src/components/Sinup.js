@@ -20,7 +20,9 @@ const Sinup = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
+
         const { email, password } = loginData;
+        
         createUserWithEmailAndPassword(auth, email, password)
         .then(user => {
             setLoginData({...data});
